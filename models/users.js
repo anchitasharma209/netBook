@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     
 },
 {
-    timestamps:true
+    timestamps:true    //timestamp is fumction(moongose schema ek function hai yellow bracket function ka pehla argument and timestam dusra argument pehla arg ek object hai dusra agr ek object hai timestamp optional hai)
 })
 
 const User = mongoose.model("User",contactSchema)
