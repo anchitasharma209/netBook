@@ -4,5 +4,7 @@ const router = express.Router();
 
 const userController =require('../controllers/userController')
 //console.log("Router loaded");
-router.get('/',userController.profile)
+router.get('/profile',userController.profile)
+router.get('/signup',userController.signUp)
+router.get('/signin',userController.signIn)
 module.exports= router;

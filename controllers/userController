@@ -1,6 +1,23 @@
+//profile
 module.exports.profile = function(req,res){
     //return res.end('<h1>User Profile</h1>')
    return res.render('user_profile',{
         tittle:"User Profile"
     })
+}
+//signup
+module.exports.signUp = function(req,res){
+    return res.render('signup',{
+        tittle:"Signup"
+    })  
+}
+//signin
+module.exports.signIn = function(req,res){
+    return res.render('signin',{
+        tittle:"Signin"
+    })
+}
+//session
+module.exports.createSession = function(req,res){
+   
 }
