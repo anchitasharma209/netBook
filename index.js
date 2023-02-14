@@ -5,6 +5,9 @@ const port = 3000
 const db = require('./config/mongoose')
 const router = require('./routes')
 var expressLayouts = require('express-ejs-layouts');
+var cookieParser = require('cookie-parser')
+app.use(cookieParser())
+app.use(express.urlencoded())
 app.set('view engine',"ejs")
 app.set('views','./views')
 app.use(expressLayouts);
